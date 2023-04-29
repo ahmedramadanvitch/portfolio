@@ -1,0 +1,60 @@
+.project{
+    .main-h2{
+        color: var(--text-color) !important;         
+    }
+    .swicher-project{
+        li{
+            cursor: pointer;
+            background-color: #00595cb5;
+            border-radius: 15px;
+            color: var(--text-color) !important;
+            font-weight: 500;
+            width: fit-content;
+        }
+        .active-pro{
+            background-color: #1a7f9e;
+            color: white !important;
+            font-weight: bold;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 3px var(--white-color);
+        }
+    }
+    .boxes{
+        // row-gap: 85px !important;
+        .big-box{
+            width: 300px;
+            height: 280px;
+            overflow: hidden;
+            .img-box{
+                border: 3px solid var(--text-color);
+                padding: 0;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: all .3s linear;
+                img{
+                    height: 100%;
+                    transform: scaleX(1.1);
+                    transition: all .3s linear;
+                }
+                a{
+                    position: relative;
+                    top: 0px;
+                    z-index: 12;
+                    transition: all .3s linear;
+                }
+                &:hover img{
+                    transform: scale(1.3 , 1.3);
+                    opacity: .3;
+                    transition: all .3s linear;
+                }
+                &:hover a{
+                    top: -200px !important;
+                    transition: all .3s linear;
+                }
+            }
+        }
+    }
+}
+

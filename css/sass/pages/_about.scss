@@ -1,0 +1,40 @@
+.about{
+    .container{
+        .main-h2{
+            color: var(--text-color) !important;         
+        }
+        .row{
+            .about-text{
+                @include mobileScreen{
+                    order: 2;
+                }
+                & > p{
+                    color: var(--text-color) !important;
+                    font-size: 25px !important;
+                    font-weight: 700;
+                }
+                ul{
+                    li{
+                        p{
+                            color: var(--text-color);
+                            font-size: 22px !important;
+                            font-weight: 500 !important;
+                            margin-bottom: -15px !important;
+                        }
+                    }
+                }
+            }
+            .about-img{
+                @include mobileScreen{
+                    order: 1;
+                }
+                .lord-icon{
+                    @include mobileScreen{
+                        width:350px !important;
+                        height: 350px !important;
+                    }
+                }
+            }
+        }
+    }
+}

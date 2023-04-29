@@ -1,0 +1,275 @@
+.landing{
+    .all-rain{
+        span{
+            display: block;
+            width: 3px;
+            height: 35px;
+            background: linear-gradient(0deg, #003444 0%, #8ebcbd 70%);
+            top: -60px;
+            border-radius: 10px 10px 35px 35px;
+            transform: rotate(-175deg) scale(1.3);
+            filter: blur(-5px);
+            animation-name: rain;
+            animation-duration: 1.8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rain {
+            0%{
+                top: -200px;
+                opacity: .8;
+            }
+            50%{
+                opacity: .4;
+            }
+            100%{
+                top: 400px;
+                opacity: 0;
+            }
+        }
+        .rain-1{
+            left: 30px;
+            animation-name: rain;
+            animation-delay: .2s;
+        }
+        .rain-2{
+            left: 160px;
+            animation-name: rain;
+            animation-delay: 2s;
+        }
+        .rain-3{
+            left: 200px;
+            animation-name: rain;
+            animation-delay: 3s;
+        }
+        .rain-4{
+            left: 300px;
+            animation-name: rain;
+            animation-delay: 1.2s;
+        }
+        .rain-5{
+            left: 400px;
+            animation-name: rain;
+            animation-delay: 1.6s;
+            @include mobileScreen{
+                left: 220px;
+            }
+        }
+        .rain-6{
+            left: 500px;
+            animation-name: rain;
+            animation-delay: .2s;
+            @include mobileScreen{
+                left: 230px;
+            }
+        }
+        .rain-7{
+            left: 600px;
+            animation-name: rain;
+            animation-delay: 1.5s;
+            @include mobileScreen{
+                display: none !important;
+            }
+        }
+        .rain-8{
+            left: 700px;
+            animation-name: rain;
+            animation-delay: 2.8s;
+            @include mobileScreen{
+                display: none !important;
+            }
+        }
+        .rain-9{
+            left: 800px;
+            animation-name: rain;
+            animation-delay: 1.2s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                left: 730px;
+            }
+        }
+        .rain-10{
+            left: 900px;
+            animation-name: rain;
+            animation-delay: 3.5s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+        }
+        .rain-11{
+            left: 1000px;
+            animation-name: rain;
+            animation-delay: 2s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                left: 920px;
+            }
+        }
+        .rain-12{
+            left: 1050px;
+            animation-name: rain;
+            animation-delay: 1.5s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                display: none !important;
+            }
+        }
+        .rain-13{
+            left: 1100px;
+            animation-name: rain;
+            animation-delay: 1.8s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                display: none !important;
+            }
+        }
+        .rain-14{
+            left: 1150px;
+            animation-name: rain;
+            animation-delay: 1.3s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                display: none !important;
+            }
+        }
+        .rain-15{
+            left: 1200px;
+            animation-name: rain;
+            animation-delay: 2.3s;
+            @include mobileScreen{
+                display: none !important;
+            }
+            @include smallScreen{
+                display: none !important;
+            }
+            @include MediumScreen{
+                display: none !important;
+            }
+        }
+    }
+    svg{
+        path{
+            animation-name: svg-rain;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+        }
+        @keyframes svg-rain {
+            0%{
+                opacity: .8;
+            }
+            25%{
+                opacity: .6;
+            }
+            50%{
+                opacity: .2;
+            }
+            75%{
+                opacity: .6;
+            }
+            100%{
+                opacity: .8;
+            }
+        }
+    }
+    .container{
+        .image-landing{
+            bottom: 220px;
+            margin: 10px auto;
+            min-width: 250px;
+            max-width: 320px;
+            width: 27%;
+            @include mobileScreen{
+                bottom: -65px !important;
+            }
+            @include smallScreen{
+                bottom: 20px;
+            }
+            @include MediumScreen{
+                top: -20px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                opacity: .8;
+            }
+        }
+        .landing-text{
+            text-align: center;
+            position: relative;
+            bottom: 220px;
+
+            @include MediumScreen{
+                bottom: 30px;
+            }
+            @include smallScreen{
+                bottom: 30px;
+            }
+            @include mobileScreen{
+                bottom: -60px !important;
+                height: 52vh !important;
+            }
+
+            .header-h1{
+                font-size: 45px;
+                color: var(--text-color);
+                animation-name: move-h1;
+                animation-timing-function: ease-in-out;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: both;
+                animation-direction: alternate;
+                @include mobileScreen{
+                    font-size: 35px;
+                }
+            }
+            @keyframes move-h1 {
+                0%{
+                    transform: translateX(-10px);
+                }
+                100%{
+                    transform: translateX(10px);
+                }
+            }
+            p.front{
+                color: var(--text-color);
+                font-weight: 500;
+                text-align: center !important;
+                margin: 10px auto;
+                width: 30%;
+                @include mobileScreen{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}

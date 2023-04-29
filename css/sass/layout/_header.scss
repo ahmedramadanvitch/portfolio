@@ -1,0 +1,15 @@
+.nav{
+    background-color: #1c3040b4;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    width: max-content;
+    .nav-item{
+        .nav-link{
+            padding: 0.5rem .5rem !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/* start right button scrolling in page */
+.btn-up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.show {
+    right: 0px;
+}
+/* End right button scrolling in page */
