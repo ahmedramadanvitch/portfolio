@@ -1,0 +1,29 @@
+svg path {
+  animation-name: svg-rain;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes svg-rain {
+  0% {
+    opacity: .8;
+  }
+
+  25% {
+    opacity: .6;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  75% {
+    opacity: .6;
+  }
+
+  100% {
+    opacity: .8;
+  }
+}

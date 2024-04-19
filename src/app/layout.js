@@ -1,5 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import NavBar from "./(components)/NavBar/NavBar";
+import Landing from "./(components)/Landing/Landing";
+import SocialLinks from "./(components)/SocialLinks/SocialLinks";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +15,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Ahmed Ramadan (Portfolio)</title>
+      </head>
+      <body className={`${inter.className} parent`}>
+        <Landing>
+          <SocialLinks />
+          <div className="container mx-auto px-5 md:px-14">{children}</div>
+          <NavBar />
+        </Landing>
+      </body>
     </html>
   );
 }
