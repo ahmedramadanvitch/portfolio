@@ -26,7 +26,7 @@ function Skills() {
     },
     {
       id: 9,
-      text: "redux-query",
+      text: "react-query",
       icon: <i className="fa-solid fa-registered"></i>,
     },
     {
