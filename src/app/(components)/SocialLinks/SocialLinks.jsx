@@ -18,7 +18,7 @@ function SocialLinks() {
     {
       id: 3,
       icon: <i className="fa-brands fa-linkedin text-blue-500"></i>,
-      to: "https://www.linkedin.com/in/ahmed-ramadan-ab7a17214",
+      to: "https://www.linkedin.com/in/ahmed-ramadan-3542212b1/",
     },
   ];
   return (

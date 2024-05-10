@@ -6,7 +6,7 @@ export default function Cv() {
       <div className="w-full h-[50vh] flex justify-center items-center">
         <a
           download="ahmed-ramadan-cv"
-          href="./cv.pdf"
+          href="./Ahmed Ramadan CV .pdf"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full tracking-wider"
         >
           Download CV
